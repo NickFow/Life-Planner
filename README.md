@@ -15,4 +15,4 @@ Objectives (in a chronological order):
 
 4. 
 
-
+This application is intended for a school project, but will throughout the summer be pursued as an active project that will have a deadline/goal of being finished at the end of summer. 
