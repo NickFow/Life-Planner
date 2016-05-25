@@ -1,4 +1,4 @@
-# Life Planner (Undecided)
+# Life Planner
 ---------------------------------------------------------------------------------------------------------------------
 
 The focus of this app is to centralize on user-friendliness. To often apps as such do not create an environment that does not allow the user to freely use the app, but restrict the user to specifications that are not always practical. The app is naturally inviting to busy users. As such, busy users tend to be professionalist, but not limiting too. Based off that statistic, the app should feel comfortable for both, personal use, and a professional use. 
