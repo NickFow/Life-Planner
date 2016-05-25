@@ -1,0 +1,49 @@
+import java.util.Scanner;
+
+class Start
+{
+	public static void main(String[] args)
+	{
+		//Greetings 
+		System.out.println("Welcome to Life Planner!");
+		System.out.println();
+		System.out.println("Press enter to contine...");
+		Scanner userInput = new Scanner(System.in);
+		System.out.println();
+		userInput.nextLine();
+		start.Register;
+		
+		
+		class register
+		{
+		
+		
+		//Register 
+		System.out.println("Hello! Before we jump into managing your life, we must ask some simple ");
+		System.out.println("information of you.");
+		System.out.println();
+		System.out.println();
+		
+		System.out.print("First Name: ");
+		String firstName = userInput.next();
+		userInput.nextLine();
+		
+		System.out.println();
+		
+		System.out.print("Last Name: ");
+		String lastName = userInput.next();
+		userInput.nextLine();
+		
+		System.out.println();
+		
+		System.out.print("Email: ");
+		String email = userInput.next();
+		userInput.nextLine();
+		
+		System.out.println();
+		
+		System.out.print("Age: ");
+		int age = userInput.nextInt();
+		userInput.nextLine();
+	}
+}
