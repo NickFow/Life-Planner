@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
-class Start
-{
+public class Start {
+	
 	public static void main(String[] args)
 	{
 		//Greetings 
@@ -11,5 +11,14 @@ class Start
 		Scanner userInput = new Scanner(System.in);
 		System.out.println();
 		userInput.nextLine();
+		
+		//Register
+		register Register = new register();
+		Register.Register();
+		
+		/*Testing Array
+		MonthsArray monthsArray = new MonthsArray();
+		MonthsArray.monthsArray();
+		*/
 	}
 }
