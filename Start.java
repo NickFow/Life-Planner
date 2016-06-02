@@ -14,11 +14,12 @@ public class Start {
 		
 		//Register
 		register Register = new register();
-		Register.Register();
+		Register.register();
 		
-		/*Testing Array
-		MonthsArray monthsArray = new MonthsArray();
-		MonthsArray.monthsArray();
-		*/
+		
+		//I feel like creating the home screen right now, so Im skipping any tutorial screen
+		home home = new home();
+		home.home();
+		
 	}
 }
