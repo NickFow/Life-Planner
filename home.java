@@ -1,3 +1,4 @@
+package lifePlanner;
 import java.util.Scanner;
 
 public class home {
@@ -69,7 +70,6 @@ public class home {
 			
 		}
 		
-		System.out.println("------------------------------------------------------------");
 	}
 
 }

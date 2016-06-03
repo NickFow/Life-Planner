@@ -1,6 +1,6 @@
 package lifePlanner;
 
-public class Habits {
+public class earlyHabits {
 	
 	public void startHabits()
 	{

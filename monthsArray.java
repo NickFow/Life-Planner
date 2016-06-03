@@ -1,18 +1,22 @@
+package lifePlanner;
 
-public class MonthsArray {
-	
+public class monthsArray {
 	public static void monthsArray()
 	{
 	
 	/* This array needs to be size 12, and store 
 	 * 29-31 arrays.
+	 * 
+	 * I also need to create an object for days.
 	 */
+	daysArray days = new daysArray();
+		
 	int[] months;
-	
 	months = new int[12];
 	
 	//Array
-	months[0] = 1;
+	//Replace values with more arrays
+	months[0] = days.january();
 	months[1] = 2;
 	months[2] = 3;
 	months[3] = 4;
