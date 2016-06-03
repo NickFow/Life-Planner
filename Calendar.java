@@ -1,14 +1,19 @@
 package lifePlanner;
 
-public class Calendar {
+import java.io.Serializable;
+import java.util.Calendar;
+
+public abstract class Calendar
+		extends Object
+		implements Serializable, Cloneable, Comparable<Calendar>
+{
+	protected Calendar()
+	{
+		//Calendar is already a import
+	}
+		
 	
-		//So in here, we're going to create a sick nasty array that I don't really want to make but oh well...
-		
-		/* So the array needs 12 months, in each month I need the size 
-		   to be 29, 30, or 31 for each day, then inside each one of those, 
-		   then the ability to store a event in any of them.*/
-		
-		//I think i'm just going to compile the entire array in this
+	
 	}
 	
 
