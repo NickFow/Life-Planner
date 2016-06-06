@@ -5,6 +5,7 @@ public class Start
 {
 	public static void main(String[] args)
 	{
+		/*
 		//Greetings 
 		//This will be the first screen
 		System.out.println("Welcome to Life Planner!");
@@ -22,6 +23,9 @@ public class Start
 		//I feel like creating the home screen right now, so Im skipping any tutorial screen
 		home home = new home();
 		home.home();
-		
+		*/
+	
+		Calendar Calendar = new Calendar();
+		Calendar.Calendar();
 	}
 }

@@ -39,7 +39,8 @@ public class home {
 		switch(menunum)
 		{
 		case 1: 
-			//Direct to Calendar
+			Calendar Calendar = new Calendar();
+			Calendar.Calendar();
 			break;
 			
 		case 2: 

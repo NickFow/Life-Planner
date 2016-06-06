@@ -1,19 +1,54 @@
 package lifePlanner;
+import java.util.Scanner;
+import java.time.Month;
+import java.util.Arrays;
 
-import java.io.Serializable;
-import java.util.Calendar;
-
-public abstract class Calendar
-		extends Object
-		implements Serializable, Cloneable, Comparable<Calendar>
+public class Calendar
 {
-	protected Calendar()
+	public void Calendar()
 	{
-		//Calendar is already a import
-	}
+		//Object to get the month
+		Scanner UI = new Scanner(System.in);
+		
+		//This will list the Months, skipping 0 by adding a null value at the beginning
+		String[] Months = {"null","January","February","March","April","May","June","July",
+				"August","September","Octorber","November","December"};
+		
+		//This will list the number of days in each month
+		int[] numberDays = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+		
+		
+		//Print the months out for the user
+		int i;
+		for(i = 1; i <= 12; i++)
+			System.out.println("[" + i + "] " + Months[i]);
+		
+		System.out.println();
+		
+		
+		//Asking for the month and year
+		//Month
+		System.out.println("What month is it? Type the number representation of the month!");
+		int userMonth = UI.nextInt();
+		System.out.println();
+		
+		//Year
+		System.out.println("And what year is it?");
+		int userYear = UI.nextInt();
+		System.out.println();
 		
 	
-	
+		//Create the calendar
+		int j;
+		System.out.println(Months[userMonth] + " " + userYear);
+		System.out.println(" S  M Tu  W Th  F  S");
+		for(j = 1; j <= numberDays[userMonth]; j++)
+			
+			System.out.println("%userMonth ", j);
+			if (((i + userMonth) % 7 == 0) || (i == numberDays[M])) StdOut.println();
+		
 	}
+}
+
 	
 
