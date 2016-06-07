@@ -1,12 +1,14 @@
 package lifePlanner;
+
 import java.util.Scanner;
-import java.time.Month;
-import java.util.Arrays;
 
 public class Calendar
 {
+	
+
 	public void Calendar()
 	{
+	     	     
 		//Object to get the month
 		Scanner UI = new Scanner(System.in);
 		
@@ -15,7 +17,7 @@ public class Calendar
 				"August","September","Octorber","November","December"};
 		
 		//This will list the number of days in each month
-		int[] numberDays = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+		int[] Days = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 		
 		
 		//Print the months out for the user
@@ -37,27 +39,40 @@ public class Calendar
 		int userYear = UI.nextInt();
 		System.out.println();
 		
+		//Starting day
+		int d;
 	
 		//Create the calendar
 		//Figure out a way to hold only 7 days in each row
-		int j;
 		System.out.println("      " + Months[userMonth] + " " + userYear);
-		System.out.println(" S  M Tu  W Th  F  S");
-		for(j = 1; j <= numberDays[userMonth]; j++)
-			
-			if(j < 8)
-				System.out.print(" " + j + " ");
-			else if(j < 15)
-				System.out.print(" " + j + " ");
-			else if(j < 22)
-				System.out.print(" " + j + " ");
-			else if(j < 28)
-				System.out.print(" " + j + " ");
-			else if(j < 32)
-				System.out.print(" " + j + " ");
 		
+		for(d = 1; d <= 7; d++)
+			
+			System.out.print(" " + d + " ");
+		
+		System.out.println();
+		
+		for(d = 8; d <= 9; d++)
+			System.out.print(" " + d + " ");
+		
+		for(d = 10; d <= 14; d++)
+			System.out.print(d + " ");
+		
+		System.out.println();
+		
+		for(d = 15; d <= 21; d++)
+			System.out.print(d + " ");
+		
+		System.out.println();
+		
+		for(d = 22; d <= 28; d++ )
+			System.out.print(d + " ");
+		
+		System.out.println();
+		
+		for(d = 28; d <= Days[userMonth]; d++)
+			
+			
+	     	
 	}
 }
-
-	
-
