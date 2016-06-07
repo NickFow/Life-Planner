@@ -39,13 +39,22 @@ public class Calendar
 		
 	
 		//Create the calendar
+		//Figure out a way to hold only 7 days in each row
 		int j;
-		System.out.println(Months[userMonth] + " " + userYear);
+		System.out.println("      " + Months[userMonth] + " " + userYear);
 		System.out.println(" S  M Tu  W Th  F  S");
 		for(j = 1; j <= numberDays[userMonth]; j++)
 			
-			System.out.println("%userMonth ", j);
-			if (((i + userMonth) % 7 == 0) || (i == numberDays[M])) StdOut.println();
+			if(j < 8)
+				System.out.print(" " + j + " ");
+			else if(j < 15)
+				System.out.print(" " + j + " ");
+			else if(j < 22)
+				System.out.print(" " + j + " ");
+			else if(j < 28)
+				System.out.print(" " + j + " ");
+			else if(j < 32)
+				System.out.print(" " + j + " ");
 		
 	}
 }
