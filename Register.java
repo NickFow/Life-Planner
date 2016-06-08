@@ -33,22 +33,24 @@ public class Register {
 			userInput.nextLine();
 			System.out.println();
 			
-			
+	}	
 			//Age
-			try
-			{
-			System.out.print("Age: ");
-			int age = userInput.nextInt();
-			userInput.nextLine();
-			}
-			catch(Exception InputMismatchException)
-			{
-			}
+		public void age(){
+				
+			Scanner userInput = new Scanner(System.in);
 			
-			finally{
+			try{
+				System.out.print("Age: ");
+				int age = userInput.nextInt();
+				userInput.nextLine();
+				System.out.println();
 			}
-			
-			System.out.println();
-			System.out.println();
-	}
+			catch(Exception e){
+				System.out.println();
+				System.out.println("Please enter a number for your age!");
+				age();
+			}
+		System.out.println();
+	}	
 }
+

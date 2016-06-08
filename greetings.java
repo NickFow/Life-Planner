@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class greetings {
 	
-	public void greetings()
+	public greetings()
 	{
 		//Greetings 
 		//This will be the first screen

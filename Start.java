@@ -1,5 +1,6 @@
 package lifePlanner;
 import java.io.*;
+import java.util.Scanner;
 
 public class Start 
 {
@@ -18,13 +19,19 @@ public class Start
 		 * 
 		 */
 		
-		//Greetings
-		greetings greetings = new greetings();
-		greetings.greetings();
+		//Greetings 
+				//This will be the first screen
+				System.out.println("Welcome to Life Planner!");
+				System.out.println();
+				System.out.println("Press enter to contine...");
+				Scanner userInput = new Scanner(System.in);
+				System.out.println();
+				userInput.nextLine();
 		
 		//Register
 		Register register = new Register();
 		register.register();
+		register.age();
 
 		//Home
 		home home = new home();

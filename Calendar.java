@@ -1,6 +1,7 @@
 package lifePlanner;
 
 import java.util.Scanner;
+import java.util.ArrayList;
 
 public class Calendar
 {
@@ -16,6 +17,7 @@ public class Calendar
 		String[] Months = {"null","January","February","March","April","May","June","July",
 				"August","September","Octorber","November","December"};
 		
+		
 		//This will list the number of numberDays in each month
 		int[] numberDays = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 		
@@ -28,11 +30,13 @@ public class Calendar
 		System.out.println();
 		
 		
-		//Asking for the month and year
+		/*Asking for the month and year*/
+		
 		//Month
 		System.out.println("What month is it? Type the number representation of the month!");
 		int userMonth = UI.nextInt();
 		System.out.println();
+			
 		
 		//Year
 		System.out.println("And what year is it?");
@@ -89,10 +93,52 @@ public class Calendar
 		switch(decision)
 		{
 		case 1:
-			//Direct to a new class for days
+			//Directs to daysMonth
+			//Calendar.daysMonth(); - trying a different method
+			
+			//Print out the Calendar again!!!
+			System.out.println("      " + Months[userMonth] + " " + userYear);
+			
+			for(d = 1; d <= 7; d++)
+				
+				System.out.print(" " + d + " ");
+			
+			System.out.println();
+			
+			for(d = 8; d <= 9; d++)
+				System.out.print(" " + d + " ");
+			
+			//This almost seems unneccasary, but if this is not included the spacing looks awful.
+			for(d = 10; d <= 14; d++)
+				System.out.print(d + " ");
+			
+			System.out.println();
+			
+			for(d = 15; d <= 21; d++)
+				System.out.print(d + " ");
+			
+			System.out.println();
+			
+			for(d = 22; d <= 28; d++ )
+				System.out.print(d + " ");
+			
+			System.out.println();
+			
+			for(d = 29; d <= numberDays[userMonth]; d++)
+				System.out.print(d + " ");
+			
+			
+			//Create an array list to accommodate the Calendar
+			
+			ArrayList<Object> daysArray = new ArrayList<Object>();
+			
+			
+			
+			
 			break;
 			
 		case 2:
+			//Directs to home screen
 			home home = new home();
 			home.home();
 			break;
@@ -109,10 +155,23 @@ public class Calendar
 			Calendar.Calendar();
 			
 		}
+			     	
+	}
+	/*public static void daysMonth()
+	{
+		 
+		 * Need to create an array with size = to the
+		 * number of days, and then populate each with
+		 * events and such
+		 
 		
+		
+		
+		
+	}	*/
 	
-			
-			
-	     	
+	public void addEvents()
+	{
+		
 	}
 }
